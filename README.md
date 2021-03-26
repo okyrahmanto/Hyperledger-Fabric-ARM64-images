@@ -74,7 +74,7 @@ Check the available tagged branches for the fabric-baseimage codebase by executi
 ```
 git tag
 ```
-For this exercise switch to branch v0.4.20 by executing:
+For this exercise switch to branch v0.4.21 by executing:
 ```
 git checkout v0.4.20
 ```
@@ -145,7 +145,7 @@ ARCH=`uname -m | sed 's|i686|386|' | sed 's|x86_64|amd64|' | sed 's|aarch64|arm6
 ```
 Still in the same file, replace all instances of **golang-1.6** with **golang-1.11**
 
-## BUILDING BASEIMAGE DOCKER IMAGES ##
+## BUILDING BASEIMAGE DOCKER IMAGES ## **Base image are deprecated**
 
 After setting up the Prerequisites and also editing the files in the Base-image codebase its time to make the images. First check if there are any available docker images and if any remove them.
 
@@ -174,7 +174,7 @@ At this point run **docker images** to see created images. If successful a list 
 
 2. Navigate to **fabric directory** and here execute this command to switch to branch v2.1.0
 ```
-git checkout v2.1.0
+git checkout v2.3.1
 ```
 
 Within this directory Now execute this command:
@@ -185,9 +185,9 @@ make docker
 If successful this process will create the **peer, orderer, tools, ccenv**. These individual components can also be built separately e.g ```make peer peer-docker``` or ```make ccenv```.
 Run docker images to list all created image.
 
-3. Dependent on what the Raspberry Pi will be in your deployment create the fabric-ca by navigating to **fabric-ca** directory. In this directory switch to branch v1.4.7
+3. Dependent on what the Raspberry Pi will be in your deployment create the fabric-ca by navigating to **fabric-ca** directory. In this directory switch to branch v1.4.9
 ```
-git checkout v1.4.7
+git checkout v1.4.9
 ```
 
 Open the Makefile in fabric-ca and replace every instance of amd64 to arm64 for Linux entries.
@@ -207,7 +207,7 @@ $ make native
 These built executables will be places in the bin folder within /bin and must be moved to the /bin folder for the Hyperledger fabric samples or project.
 
 ### **ALL REQUIRED DOCKER IMAGES WOULD HAVE BEEN BUILT BY NOW.**
-These built images can be accessed from https://hub.docker.com/u/chinyati.
+These built images can be accessed from https://hub.docker.com/u/okyrahmanto.
 Run docker images to view them.
 
 ERRORS
