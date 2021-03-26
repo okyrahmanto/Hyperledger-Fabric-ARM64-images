@@ -1,7 +1,7 @@
 # Hyperledger-Fabric-ARM64-images
-These are Hyperledger Fabric arm64 images and binaries for use on Raspberry Pi 4+ running Raspbian OS 64 Bit. 
+These are Hyperledger Fabric arm64 images and binaries for use on Raspberry Pi 4+ running Raspbian OS 64 Bit and Ubuntu 20.04 64 bit 
 
-# **Creating Hyperledger Fabric v2.1.0 ARM64 Images for Raspberry Pi 4**
+# **Creating Hyperledger Fabric v2.3.1 ARM64 Images for Raspberry Pi 3/4**
 At development of these images "Raspbian OS 64 bit operating system" for Raspberry Pi devices has just been released. Raspbian OS is a Debian distribution (debian:buster) and this is the base operating system used in this exercise. Hyperledger fabric (HLF) does not have any support for ARM64 images, however, the images can be created for the architecture only for 64 bit OS. There are other repositories and images with lower versions of HLF which did not work on my devices due to build issues and missing components hence need to create these.
 
 Built images can be accessed from https://hub.docker.com/u/chinyati.
