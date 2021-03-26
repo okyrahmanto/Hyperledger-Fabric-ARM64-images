@@ -68,11 +68,12 @@ echo "# Installing Docker-Compose"
 sudo apt install docker-compose
 
 # Install golang
-sudo wget https://golang.org/dl/go1.14.6.linux-arm64.tar.gz
+sudo wget https://golang.org/dl/go1.14.12.linux-arm64.tar.gz
 
 # unpack the golang
-sudo tar -C /usr/local -xvf go1.14.6.linux-arm64.tar.gz
+sudo tar -C /usr/local -xvf go1.14.12.linux-arm64.tar.gz
 
+export PATH=$PATH:/usr/local/go/bin
 
 # Print installation details for user
 echo ''
@@ -84,10 +85,10 @@ echo -n 'Node:			'
 node --version
 echo -n 'npm:			'
 npm --version
-echo -n 'Python:		'
-python -V
-echo -n 'pipenv:		'
-pipenv --version
+#echo -n 'Python:		'
+#python -V
+#echo -n 'pipenv:		'
+#pipenv --version
 echo -n 'Java:			'
 java --version
 echo -n 'Docker:		'
