@@ -7,9 +7,9 @@ docker tag okyrahmanto/fabric-baseimage:0.4.21 hyperledger/fabric-baseimage:0.4.
 docker tag okyrahmanto/fabric-baseimage:0.4.21 hyperledger/fabric-baseimage
 
 # fabric-baseos
-docker pull okyrahmanto/fabric-baseos:0.4.21
-docker tag okyrahmanto/fabric-baseos:0.4.21 hyperledger/fabric-baseos:0.4.21
-docker tag okyrahmanto/fabric-baseos:0.4.21 hyperledger/fabric-baseos
+docker pull okyrahmanto/fabric-baseos:2.3.1
+docker tag okyrahmanto/fabric-baseos:2.3.1 hyperledger/fabric-baseos:2.3.1
+docker tag okyrahmanto/fabric-baseos:2.3.1 hyperledger/fabric-baseos
 
 # fabric-tools
 docker pull okyrahmanto/fabric-tools:2.3.1
